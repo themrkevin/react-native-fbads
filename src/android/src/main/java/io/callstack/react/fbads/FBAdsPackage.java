@@ -39,7 +39,8 @@ public class FBAdsPackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
            new NativeAdViewManager(reactContext),
-           new BannerViewManager(reactContext)
+           new BannerViewManager(reactContext),
+           new AdChoicesIconManager(reactContext)
         );
     }
 }
