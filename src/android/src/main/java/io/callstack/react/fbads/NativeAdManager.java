@@ -22,6 +22,9 @@ import com.facebook.react.modules.core.RCTNativeAppEventEmitter;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.facebook.react.module.annotations.ReactModule;
+@ReactModule(name="CTKNativeAdManager")
+
 public class NativeAdManager extends ReactContextBaseJavaModule implements NativeAdsManager.Listener {
     /** @{Map} with all registered fb ads managers **/
     private Map<String, NativeAdsManager> mAdsManagers = new HashMap<>();
